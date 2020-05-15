@@ -18,15 +18,10 @@ function getResources() {
 }
 
 function getTasks(id) {
-    return db('tasks')
-    .join('projects', 'projects.id', '=', 'tasks.project_id')
-    .select('project.projectName', 'project.description', 'task.description', 'task.notes', 'task.completed')
-    .where('projects.id', id)
-
-
-    // return db('tasks').where('projects_id', id)
-    // .join('projects', 'tasks.projects_id', 'projects.id')
-    // .select('project.projectName', 'project.description', 'task.description', 'task.notes', 'task.completed')
+    return db.from('tasks').where('projects.id', id) 
+    .join('projects', 'tasks.project_id', '=', 'projects.id')
+    
+    .select('projects.projectName', 'projects.description', 'tasks.description', 'tasks.notes', 'tasks.completed')  
     
 }
 
@@ -35,8 +30,9 @@ function addProject(newProject){
     .insert(newProject)
 }
 
-function addTask() {
-
+function addTask(newTask) {
+    return db('Tasks')
+    .insert(newTask)
 }
 
 function addResource(newResourcse) {
