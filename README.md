@@ -40,7 +40,7 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] Explain the difference between `Relational Databases` and `SQL`.
 
-  sql databases are relational databases. a relational database uses two or more tables with columns and rows
+  sql is a language that lets us interact with a relational database. Relational databases are a place to stor infromation on different tables.
 
 - [ ] Why do tables need a `primary key`?
 
