@@ -40,11 +40,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] Explain the difference between `Relational Databases` and `SQL`.
 
+  sql databases are relational databases. a relational database uses two or more tables with columns and rows
+
 - [ ] Why do tables need a `primary key`?
+
+without it we wouldn't be able to accsess whats inside the table easily.
 
 - [ ] What is the name given to a table column that references the primary key on another table.
 
+forgien key
+
 - [ ] What do we need in order to have a _many to many_ relationship between two tables.
+
+another table that links them together, called a joining or juncture table
 
 ## Minimum Viable Product
 
