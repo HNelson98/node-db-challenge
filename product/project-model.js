@@ -10,10 +10,11 @@ module.exports = {
 }
 
 function getProjects() {
-
+    return db('projects');
 }
 
 function getResources() {
+    return db('resources');
 }
 
 function getTasks() {
@@ -29,5 +30,5 @@ function addTask() {
 }
 
 function addResource() {
-    
+
 }
